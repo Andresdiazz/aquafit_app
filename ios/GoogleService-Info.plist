@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>819052084110-ksuejs86i6kn8pqoqgen5m798tgal5ak.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.819052084110-ksuejs86i6kn8pqoqgen5m798tgal5ak</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>819052084110-at3blfdh3bo0b25lp44oivupqlrjigik.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDFKcgPUHMTdglpHFCDkj3RR5fM4Vz6j4E</string>
+	<key>GCM_SENDER_ID</key>
+	<string>819052084110</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.andresdiaz.aquafitapp</string>
+	<key>PROJECT_ID</key>
+	<string>aqua-fit-d8b35</string>
+	<key>STORAGE_BUCKET</key>
+	<string>aqua-fit-d8b35.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:819052084110:ios:2d964cb772c76e351982df</string>
+	<key>DATABASE_URL</key>
+	<string>https://aqua-fit-d8b35.firebaseio.com</string>
+</dict>
+</plist>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "819052084110",
+    "firebase_url": "https://aqua-fit-d8b35.firebaseio.com",
+    "project_id": "aqua-fit-d8b35",
+    "storage_bucket": "aqua-fit-d8b35.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:819052084110:android:e8a3ad29f3c2c09b1982df",
+        "android_client_info": {
+          "package_name": "com.andresdiaz.aquafitapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "819052084110-n2et4pm2aveh4vvfkvj7km6jplvekbnu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBi8Pccmla_ZKUKwjq6tTKfMDkOVaZRViI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "819052084110-n2et4pm2aveh4vvfkvj7km6jplvekbnu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
