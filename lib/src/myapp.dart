@@ -9,14 +9,18 @@ class MyApp extends StatelessWidget {
     return BlocProvider(
       child: MaterialApp(
         theme: ThemeData(
-          fontFamily: "Gasalt",
+          fontFamily: "Futura",
           primaryColor: Colors.white,
-          accentColor: Colors.white,
+          accentColor:Colors.white,
           brightness: Brightness.light
         ),
           title: "Aqua Fit Salud y Deporte",
 
         home: LoginPage(),
+        initialRoute: '/',
+        routes: <String, WidgetBuilder>{
+          '/home' : (BuildContext context) => HomePage()
+        },
       ),
       bloc: UserBloc(),
     );
