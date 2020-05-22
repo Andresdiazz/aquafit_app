@@ -300,7 +300,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
             ) );
           } );
           Navigator.of(context).pop(context);
-          Navigator.of(context).pushReplacementNamed('/home');
+          Navigator.of(context).pushReplacementNamed('/imc');
           return user != null;
         } catch (e) {
           setState( () {
@@ -325,7 +325,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               User(uid: user.uid, email: user.email, name: user.displayName));
         });
         Navigator.of(context).pop(context);
-        Navigator.of(context).pushReplacementNamed('/home');
+        Navigator.of(context).pushReplacementNamed('/imc');
         return user != null;
       } catch (e) {
         setState(() {

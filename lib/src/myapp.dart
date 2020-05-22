@@ -1,4 +1,6 @@
+import 'package:aquafitapp/IMC/input_page/input_page.dart';
 import 'package:aquafitapp/Users/bloc/userBloc.dart';
+import 'package:aquafitapp/homeScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:generic_bloc_provider/generic_bloc_provider.dart';
 
@@ -19,7 +21,8 @@ class MyApp extends StatelessWidget {
         home: LoginPage(),
         initialRoute: '/',
         routes: <String, WidgetBuilder>{
-          '/home' : (BuildContext context) => HomePage()
+          '/home' : (BuildContext context) => HomeScreen(),
+          '/imc' : (BuildContext context) => InputPage()
         },
       ),
       bloc: UserBloc(),

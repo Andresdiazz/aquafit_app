@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:generic_bloc_provider/generic_bloc_provider.dart';
+
+import 'Users/bloc/userBloc.dart';
+import 'Users/ui/screens/loginScreen.dart';
 
 class HomeHeader extends StatefulWidget {
   @override
@@ -8,12 +12,15 @@ class HomeHeader extends StatefulWidget {
 
 class _HomeHeaderState extends State<HomeHeader> {
 
+  UserBloc userBloc;
 
 
   @override
   Widget build(BuildContext context) {
 
+
     var media = MediaQuery.of(context).size;
+    userBloc = BlocProvider.of(context);
 
     return Stack(
         children: [
@@ -45,6 +52,13 @@ class _HomeHeaderState extends State<HomeHeader> {
                 bottomRight: const Radius.circular(30)
               ),
               color: Colors.black.withOpacity(0.7),
+            ),
+            child: Align(
+              alignment: Alignment.bottomRight,
+              child: IconButton(icon: Icon(FontAwesomeIcons.signOutAlt, color: Colors.white,), onPressed: (){
+                userBloc.signOut();
+                Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => LoginPage()));
+              }),
             ),
           ),
           Container(
@@ -132,11 +146,13 @@ class _HomeHeaderState extends State<HomeHeader> {
                         )
                       ],
                     ),
-                  )
+                  ),
+
                 ],
               ),
             ),
-          )
+          ),
+
         ],
       );
 
