@@ -29,8 +29,8 @@ class _HomeHeaderState extends State<HomeHeader> {
             width: double.infinity,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.only(
-                    bottomLeft: const Radius.circular(30),
-                    bottomRight: const Radius.circular(30)
+                    bottomLeft: const Radius.circular(10),
+                    bottomRight: const Radius.circular(10)
                 ),
               image: DecorationImage(image: NetworkImage("https://images.pexels.com/photos/3875505/pexels-photo-3875505.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"),
               fit: BoxFit.cover),
@@ -48,8 +48,8 @@ class _HomeHeaderState extends State<HomeHeader> {
             width: double.infinity,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.only(
-                bottomLeft: const Radius.circular(30),
-                bottomRight: const Radius.circular(30)
+                bottomLeft: const Radius.circular(10),
+                bottomRight: const Radius.circular(10)
               ),
               color: Colors.black.withOpacity(0.7),
             ),

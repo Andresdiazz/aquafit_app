@@ -56,7 +56,7 @@ class _HomeFootState extends State<HomeFoot> {
                     width: widget.imageWidth,
                     height: widget.imageHeight,
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(25.0),
+                      borderRadius: BorderRadius.circular(5.0),
                       boxShadow: [
                         BoxShadow(
                           color: Colors.black54,
@@ -68,7 +68,7 @@ class _HomeFootState extends State<HomeFoot> {
                     child: Stack(
                       children: [
                         ClipRRect(
-                          borderRadius: BorderRadius.circular(25.0),
+                          borderRadius: BorderRadius.circular(5.0),
                           child: Image(
                             image: NetworkImage( '${doc.data["img"]}'),
                             fit: BoxFit.cover,
@@ -108,12 +108,10 @@ class _HomeFootState extends State<HomeFoot> {
       padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 10),
       child: Column(
         children: [
-          Align(
-            alignment: Alignment.topLeft,
-              child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
-                child: Text("CATEGORIAS", style: TextStyle(fontSize: 30),),
-              )),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20),
+            child: Text("CATEGORIAS", style: TextStyle(fontSize: 30),),
+          ),
           Card
         ],
       ),
