@@ -1,3 +1,4 @@
+import 'package:aquafitapp/Entrenamientos/ui/screens/seconPage.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -9,8 +10,9 @@ class HomeFoot extends StatefulWidget {
   final double imageWidth;
   final double padding;
   final double paddingContainer;
+  final String img;
 
-  const HomeFoot({Key key, this.title, this.imageHeight, this.imageWidth, this.padding, this.paddingContainer}) : super(key: key);
+  const HomeFoot({Key key, this.title, this.imageHeight, this.imageWidth, this.padding, this.paddingContainer, this.img}) : super(key: key);
 
   @override
   _HomeFootState createState() => _HomeFootState();
@@ -38,7 +40,7 @@ class _HomeFootState extends State<HomeFoot> {
                 return InkWell(
                   onTap: (){
                     print(doc.documentID);
-                    /*Navigator.push(context, MaterialPageRoute(
+                    Navigator.push(context, MaterialPageRoute(
                         builder: (_) => SecondPage(
                           id: doc.documentID,
                           title: doc.data['title'],
@@ -46,7 +48,7 @@ class _HomeFootState extends State<HomeFoot> {
                           description: doc.data['description'],
                           img:doc.data['img'],
                         )
-                    ));*/
+                    ));
                   },
                   child: Container(
                     margin: EdgeInsets.symmetric(
@@ -67,11 +69,14 @@ class _HomeFootState extends State<HomeFoot> {
                     ),
                     child: Stack(
                       children: [
-                        ClipRRect(
-                          borderRadius: BorderRadius.circular(5.0),
-                          child: Image(
-                            image: NetworkImage( '${doc.data["img"]}'),
-                            fit: BoxFit.cover,
+                        Hero(
+                          tag: doc.data['img'],
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(5.0),
+                            child: Image(
+                              image: NetworkImage( '${doc.data["img"]}'),
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
                         Padding(
@@ -108,9 +113,12 @@ class _HomeFootState extends State<HomeFoot> {
       padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 10),
       child: Column(
         children: [
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
-            child: Text("CATEGORIAS", style: TextStyle(fontSize: 30),),
+          Align(
+            alignment: Alignment.topLeft,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Text("CATEGORIAS", style: TextStyle(fontSize: 30),),
+            ),
           ),
           Card
         ],

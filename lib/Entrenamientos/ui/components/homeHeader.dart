@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:generic_bloc_provider/generic_bloc_provider.dart';
 
-import 'Users/bloc/userBloc.dart';
-import 'Users/ui/screens/loginScreen.dart';
+import '../../../Users/bloc/userBloc.dart';
+import '../../../Users/ui/screens/loginScreen.dart';
 
 class HomeHeader extends StatefulWidget {
   @override

@@ -1,7 +1,7 @@
-import 'package:aquafitapp/homeFoot.dart';
+import 'package:aquafitapp/Entrenamientos/ui/components/homeFoot.dart';
 import 'package:flutter/material.dart';
 
-import 'homeHeader.dart';
+import '../components/homeHeader.dart';
 
 class HomeScreen extends StatelessWidget {
   @override

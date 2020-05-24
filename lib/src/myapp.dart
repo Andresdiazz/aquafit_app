@@ -1,6 +1,6 @@
 import 'package:aquafitapp/IMC/input_page/input_page.dart';
 import 'package:aquafitapp/Users/bloc/userBloc.dart';
-import 'package:aquafitapp/homeScreen.dart';
+import 'package:aquafitapp/Entrenamientos/ui/screens/homeScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:generic_bloc_provider/generic_bloc_provider.dart';
 
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         theme: ThemeData(
           fontFamily: "Futura",
-          primaryColor: Colors.white,
+          //primaryColor: Color(0xff3fa0c0),
           accentColor:Colors.white,
           brightness: Brightness.light
         ),
